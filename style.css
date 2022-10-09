@@ -1,67 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 *{
     padding: 0%;
     margin: 0%;
-    background-color: black;
-    color: white;
     font-family: 'Montserrat', sans-serif;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: none;
-} 
-.tictactoe{
-    background-color: white;
-    width: 180px;
-    height: 180px;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-}
-.tictactoe h1{
-    color: black;
-    background-color: white;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.welcome h1{
-    transform: translateY(-100%);
-}
-.welcome button{
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    transition: .4s;
-}
-.welcome button:hover{
-    background-color: white;
-    color: black;
 }
 .welcome{
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    text-align: center;
+    font-size: 20px;
+}
+.welcometext{
+    margin: 80px;
+}
+.start{
+    padding: 50px;
+    color: #272c2e;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    transition: .4s;
+}
+.start:focus{
+    border-radius: 50px;
+    background: linear-gradient(315deg, white, #f0f0f0);
+    box-shadow:  -20px -20px 60px #bebebe,
+    20px 20px 60px #ffffff;
+}
+.quiz{
+    display: none;
+    transition: .4s;
+}
+.flex{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.question{
+    margin:40px;
+}
+
+.answers{
+    width: 350px;
+    height: 80px;
+    border-radius: 50px;
+    background: linear-gradient(315deg, #292f31, #31383a);
+    box-shadow:  -17px -17px 33px #7e7e7e,
+             17px 17px 33px #ffffff;
+    transition: .4s;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    transition: .4s;
+    transform: translateX(-50%) ;
+    color: white;
+}
+.answers h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.answers:hover{
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe,
+    inset -20px -20px 60px #ffffff;
+    color: #272c2e;
+}
+.correct{
+    width: 350px;
+    height: 80px;
+    border-radius: 50px;
+    background: linear-gradient(315deg, #0c810c, #05440a);
+    box-shadow:  -17px -17px 33px #7e7e7e,
+             17px 17px 33px #ffffff;
+    transition: .4s;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%) ;
+    transition: .4s;
+    color: white;
+}
+.correct h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.incorrect{
+    width: 350px;
+    height: 80px;
+    border-radius: 50px;
+    background: linear-gradient(315deg, #810c0c, #440515);
+    box-shadow:  -17px -17px 33px #7e7e7e,
+             17px 17px 33px #ffffff;
+    transition: .4s;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%) ;
+    transition: .4s;
+    color: white;
+}
+.incorrect h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.congratulations{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background: linear-gradient(315deg, #292f31, #31383a);
+    box-shadow:  -17px -17px 33px #7e7e7e,
+             17px 17px 33px #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    display: none;
 }
-input{
-    margin: 10px;
-    padding: 10px;
+.congratulations h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
-.ovan{
-    color:red;
-}
+/* css je za popraviti */

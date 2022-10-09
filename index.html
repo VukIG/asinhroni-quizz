@@ -5,37 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tic tac toe</title>
+    <title>Quizz</title>
 </head>
 <body>
     <div class="welcome">
-        <h1>Welcome to Tic tac toe!</h1>
-        <div class="name">
-            <label for="name" >Player 1's name:</label>
-            <input type="text" class="player1">
+       <div class="welcometext">
+            <h1>Welcome to JS quizz!</h1>
+            <p>Are you ready?</p>
+       </div>
+        <a class="start" href="">Let's go!</a>
+    </div>
+    <div class="quiz">
+        <div class="flex">
+            <div class="question">
+                <h1></h1>
+            </div>
+            <div class="answers">
+                <h1></h1>
+            </div>
+            <div class="answers">
+                <h1></h1>
+            </div>
+            <div class="answers">
+                <h1></h1>
+            </div>
+            <div class="answers">
+                <h1></h1>
+            </div>
         </div>
-        <div class="name">
-            <label for="name" >Player 2's name:</label>
-            <input type="text" class="player2">
-        </div>
-        <button class="start">Start</button>
     </div>
-    <div class="grid">
-        <div class="tictactoe" data-x="1" ><h1></h1></div>
-        <div class="tictactoe" data-x="2" ><h1></h1></div>
-        <div class="tictactoe" data-x="3" ><h1></h1></div>
-        <div class="tictactoe" data-x="4" ><h1></h1></div>
-        <div class="tictactoe" data-x="5" ><h1></h1></div>
-        <div class="tictactoe" data-x="6"><h1></h1></div>
-        <div class="tictactoe" data-x="7" ><h1></h1></div>
-        <div class="tictactoe" data-x="8" ><h1></h1></div>
-        <div class="tictactoe" data-x="9" ><h1></h1></div>
+    <div class="congratulations">
+        <h1>Yoh have scored %</h1>
     </div>
-    <div class="turn">
-        <h1></h1>
-    </div>
-    <div class="endEndScreen">
-    </div>
-    <script src="app.js" defer ></script>
+    <script defer src="main.js"></script>
 </body>
 </html>
